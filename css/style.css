@@ -1,0 +1,36 @@
+
+.question {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option-buttons {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel, #flip {
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #c3c3c3;
+}
+
+.panel {
+  padding: 50px;
+  display: none;
+  /*display: inline;*/
+}
+
+.img {
+    max-width: 50px;
+    height: 50px;
+}
+
+
