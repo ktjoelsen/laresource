@@ -10,10 +10,8 @@
   </head>
   <body>
    
-  <div class="question" id="question1">
+  <div class="question" id="question-problem">
     <h1>Help! I am having a problem with...</h1>
-
-    <!--  -->
     <div class="option-buttons">
       <div class="btn btn-default" id="option-choose-classes">
         ...choosing classes
@@ -22,10 +20,10 @@
         ...a class I'm currently taking
       </div>
     </div>
+  </div>
 
-    <!-- choose classes: longterm vs short term -->
-    <div class="panel" id="panel-choose-classes">
-
+  <div class="panel" id="panel-choose-classes">
+    <div class="question" id="question-choose-classes">
       <div class="option-buttons">
         <div class="btn btn-default" id="option-longterm">
           ...in the long term
@@ -34,9 +32,7 @@
           ...for this semester
         </div>
       </div>
-
     </div>
-
   </div>
 
   <div class="panel" id="panel-longterm">
@@ -47,16 +43,16 @@
   </div>
 
   <div class="panel" id="panel-semester">
-    
-    <div class="option-buttons">
-      <div class="btn btn-default" id="option-semester-schedule">
-        I already have some ideas, but need to figure out my schedule
-      </div>
-      <div class="btn btn-default" id="option-semester-start">
-        I need a place to start
+    <div class="question" id="question-semester">
+      <div class="option-buttons">
+        <div class="btn btn-default" id="option-semester-schedule">
+          I already have some ideas, but need to figure out my schedule
+        </div>
+        <div class="btn btn-default" id="option-semester-start">
+          I need a place to start
+        </div>
       </div>
     </div>
-
   </div>
 
   <div class="panel" id="panel-semester-schedule">
@@ -73,44 +69,46 @@
 
   <!-- Problem with current class -->
   <div class="panel" id="panel-current-class">
-    <div class="option-buttons">
-      <div class="btn btn-default" id="option-class-content">
-        I'm struggling with content 
-      </div>
-      <div class="btn btn-default" id="option-class-external">
-         External Factors are affecting my academic performance
+    <div class="question" id="question-current">
+      <div class="option-buttons">
+        <div class="btn btn-default" id="option-class-content">
+          I'm struggling with content 
+        </div>
+        <div class="btn btn-default" id="option-class-external">
+           External Factors are affecting my academic performance
+        </div>
       </div>
     </div>
   </div>
 
   <div class="panel" id="panel-class-content">
-    Is this a GIR?
-    <div class="option-buttons">
-      <div class="btn btn-default" id="option-gir-yes">
-        Yes GIR
-      </div>
-      <div class="btn btn-default" id="option-gir-no">
-        No GIR
+    <div class="question" id="question-gir">
+      Is this a GIR?
+      <div class="option-buttons">
+        <div class="btn btn-default" id="option-gir-yes">
+          Yes GIR
+        </div>
+        <div class="btn btn-default" id="option-gir-no">
+          No GIR
+        </div>
       </div>
     </div>
-
   </div>
 
   <div class="panel" id="panel-class-external">
-    class external problems info
-
-    <div class="option-buttons">
-      <div class="btn btn-default" id="option-external-professor">
-        I'm in conflict with a professor
-      </div>
-      <div class="btn btn-default" id="option-external-shortterm">
-        I have a short term problem (sick or have a conflict with an exam)
-      </div>
-      <div class="btn btn-default" id="option-external-longterm">
-        I have a longer term problem (disability, long term injury)
+    <div class="question" id="question-external">
+      <div class="option-buttons">
+        <div class="btn btn-default" id="option-external-professor">
+          I'm in conflict with a professor
+        </div>
+        <div class="btn btn-default" id="option-external-shortterm">
+          I have a short term problem (sick or have a conflict with an exam)
+        </div>
+        <div class="btn btn-default" id="option-external-longterm">
+          I have a longer term problem (disability, long term injury)
+        </div>
       </div>
     </div>
-
   </div>
 
   <div class="panel" id="panel-gir-yes">
@@ -122,16 +120,17 @@
   </div>
 
   <div class="panel" id="panel-gir-no">
-    Is this a writing class?
-    <div class="option-buttons">
-      <div class="btn btn-default" id="option-writing-yes">
-        Yes
-      </div>
-      <div class="btn btn-default" id="option-writing-no">
-        No 
+    <div class="question" id="question-writing">
+      Is this a writing class?
+      <div class="option-buttons">
+        <div class="btn btn-default" id="option-writing-yes">
+          Yes
+        </div>
+        <div class="btn btn-default" id="option-writing-no">
+          No 
+        </div>
       </div>
     </div>
-
   </div>
 
   <div class="panel" id="panel-writing-yes">
@@ -150,7 +149,6 @@
 
   <div class="panel" id="panel-external-longterm">
     <h2>SDS</h2>
-    
   </div>
 
 
