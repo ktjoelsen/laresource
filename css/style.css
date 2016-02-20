@@ -44,7 +44,7 @@ body {
 
 .subtitle {
   font-family: 'Raleway', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   margin-top: -10px;
   font-weight: 700;
   padding-bottom: 40px;
@@ -106,7 +106,7 @@ a {
 
 .support {
   bottom: 0;
-  font-size: 18px;
+  font-size: 15px;
   margin:0px;
   position: inherit;
   padding-top: 50px;
