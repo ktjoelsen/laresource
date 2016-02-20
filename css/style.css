@@ -7,7 +7,9 @@
 .option-buttons {
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: inline-flex;
+    margin-top: -25px;
+    margin-bottom: 25px;
 }
 
 .btn {
@@ -16,15 +18,13 @@
 }
 
 .panel, #flip {
-  padding: 5px;
   text-align: center;
   border: solid 1px #c3c3c3;
 }
 
 .panel {
-  padding: 50px;
   display: none;
-  /*display: inline;*/
+  border: none;
 }
 
 .img {
@@ -32,4 +32,74 @@
     height: 50px;
 }
 
+body {
+  padding: 80px;
+  text-align: center;
+}
 
+.logo {
+  height: 100px;
+  margin-left: -10px;
+}
+
+.subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  margin-top: -10px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+h1, h2, h3, p {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+hr {
+  margin-top: 30px;
+  width: 800px;
+  height: 3px;
+  color: #A31F34;
+  background-color: #A31F34;
+}
+
+.btn {
+  border: 0.15em #333336 solid;
+  border-radius: 0.6em;
+  background-color: #A31F34;
+  margin: 30px;
+  width: 250px;
+}
+
+.btn:hover {
+  background-color: #8A8B8C;
+}
+
+.btn:active {
+  background-color: #C2C0BF;
+}
+
+.btn:visited {
+  background-color: #8A8B8C;
+}
+
+.not_selected_btn {
+  opacity: .4;
+}
+
+h2 {
+  font-weight: 100;
+}
+
+h3 {
+  margin: 0px 25%;
+  color: #8A8B8C;
+  font-weight: 100;
+}
+
+a {
+  color: #A31F34;
+}

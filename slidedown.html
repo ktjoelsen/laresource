@@ -2,34 +2,40 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
-
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
 
    
   </head>
   <body>
-   
+  <img class="logo" src="img/logo.png">
+  <div class="subtitle"> 
+    To help you figure out the best academic resource for your needs
+    <hr>
+  </div>
+
   <div class="question" id="question-problem">
-    <h1>Help! I am having a problem with...</h1>
+    <h1>1. Help! I am having a problem with...</h1>
     <div class="option-buttons">
       <div class="btn btn-default" id="option-choose-classes">
-        ...choosing classes
+        <p>Choosing classes</p>
       </div>
       <div class="btn btn-default" id="option-current-class">
-        ...a class I'm currently taking
+        <p>A class I'm currently taking</p>
       </div>
     </div>
   </div>
 
   <div class="panel" id="panel-choose-classes">
     <div class="question" id="question-choose-classes">
+    <h1>2. I need help choosing classes...</h1>
       <div class="option-buttons">
         <div class="btn btn-default" id="option-longterm">
-          ...in the long term
+          <p>Long term</p>
         </div>
         <div class="btn btn-default" id="option-semester">
-          ...for this semester
+          <p>This semester</p>
         </div>
       </div>
     </div>
@@ -37,19 +43,24 @@
 
   <div class="panel" id="panel-longterm">
     <h2>Course Road</h2>
+    <h3> <a href="https://courseroad.mit.edu" target="_blank"> CourseRoad </a> is an interactive resource that allows you to see how classes fit together to meet requirements over the course of your MIT career.</h3>
     <h2>Department Website</h2>
+    <h3> Your department's website will have the requirements for your major. </h3>
     <h2>Advisor</h2>
+    <h3> Ask your advisor about when key classes are typically taken or their recommendations for you. </h3>
     <h2>Cross registering</h2>
+    <h3> MIT students are eligible for <a href="http://web.mit.edu/registrar/reg/xreg/" target="_blank"> cross-registration </a> at Wellesley, Harvard, MassArt, and the School of the Museum of Fine Arts. </h3>
   </div>
 
   <div class="panel" id="panel-semester">
     <div class="question" id="question-semester">
+      <h1>3. I'm currently stuck on...</h1>
       <div class="option-buttons">
         <div class="btn btn-default" id="option-semester-schedule">
-          I already have some ideas, but need to figure out my schedule
+          <p>Figuring out my schedule</p>
         </div>
         <div class="btn btn-default" id="option-semester-start">
-          I need a place to start
+          <p>I need a place to start</p>
         </div>
       </div>
     </div>
@@ -57,25 +68,32 @@
 
   <div class="panel" id="panel-semester-schedule">
     <h2>Course picker</h2>
+    <h3> <a href="http://picker.mit.edu" target="_blank">Picker</a> allows you to select which recitations you would like to be in and build your own schedule. </h3>
     <h2>Course planner</h2>
+    <h3> <a href="http://planner.mit.edu" target="_blank">Planner</a> shows you all possible permutations of a given set of classes. Planner also allows you to select times to hold for activities. </h3>
   </div>
 
   <div class="panel" id="panel-semester-start">
     <h2>Subject + Listing</h2>
+    <h3>The <a href="http://student.mit.edu/catalog/index.cgi" target="_blank">Subject Listing & Schedule </a> shows every class MIT offers. You can search by time, major, HASS status, and semester offered. </h3>
     <h2>Course evaluations</h2>
+    <h3><a href="http://web.mit.edu/subjectevaluation/" target="_blank">Course Evaluations</a> provide the aggregate results of the course evaluation surveys given to all students at the end of each course.</h3>
     <h2>Upperclassmen</h2>
+    <h3> Ask an upperclassmen for their recommendation. Whether you’re looking for advice within your major or for GIRs, someone has been there before and can offer advice. </h3>
     <h2>Cross registering</h2>
+    <h3> MIT students are eligible for <a href="http://web.mit.edu/registrar/reg/xreg/" target="_blank"> cross-registration </a> at Wellesley, Harvard, MassArt, and the School of the Museum of Fine Arts. </h3>
   </div>
 
   <!-- Problem with current class -->
   <div class="panel" id="panel-current-class">
     <div class="question" id="question-current">
+      <h1>2. I'm struggling with...</h1>
       <div class="option-buttons">
         <div class="btn btn-default" id="option-class-content">
-          I'm struggling with content 
+          <p>Content</p>
         </div>
         <div class="btn btn-default" id="option-class-external">
-           External Factors are affecting my academic performance
+          <p>External factors affecting my academic performance</p>
         </div>
       </div>
     </div>
@@ -83,13 +101,13 @@
 
   <div class="panel" id="panel-class-content">
     <div class="question" id="question-gir">
-      Is this a GIR?
+      <h1>3. Is this a GIR?</h1>
       <div class="option-buttons">
         <div class="btn btn-default" id="option-gir-yes">
-          Yes GIR
+          <p>Yes GIR</p>
         </div>
         <div class="btn btn-default" id="option-gir-no">
-          No GIR
+          <p>No GIR</p>
         </div>
       </div>
     </div>
@@ -97,58 +115,75 @@
 
   <div class="panel" id="panel-class-external">
     <div class="question" id="question-external">
+      <h1>3. These factors can be described as... </h1>
       <div class="option-buttons">
         <div class="btn btn-default" id="option-external-professor">
-          I'm in conflict with a professor
+          <p>A conflict with a professor</p>
         </div>
         <div class="btn btn-default" id="option-external-shortterm">
-          I have a short term problem (sick or have a conflict with an exam)
+          <p>Short term (sick or have a conflict with an exam)</p>
         </div>
         <div class="btn btn-default" id="option-external-longterm">
-          I have a longer term problem (disability, long term injury)
+          <p>Long term (disability, long term injury)</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="panel" id="panel-gir-yes">
-    <h2>TSR^2</h2>
+    <h2>OME Talented Scholars Resource Room</h2>
+    <h3>The <a href="http://ome.mit.edu/programs-services/ome-talented-scholars-resource-room-tsr2" target="_blank">Talented Scholars Resource Room </a> offers free drop-in tutoring for GIRs. See the website for times by course.</h3>
     <h2>Seminar XL</h2>
+    <h3><a href="http://ome.mit.edu/programs-services/seminar-xlle" target="_blank"> Seminar XL </a> provides a structured study-group for introductory subjects. </h3>
     <h2>Science core tutors</h2>
+    <h3>For science and math GIRs, one-on-one <a href="http://web.mit.edu/uaap/learning/tutoring/core.html" target="_blank">tutoring</a> is available for students who are struggling. </h3>
     <h2>Math Learning Center</h2>
+    <h3>For course 18 intro courses (18.01,18.02,18.03, and 18.06), the math department offers drop in <a href="https://math.mit.edu/learningcenter/" target="_blank">tutoring</a>. </h3>
     <h2>OCW</h2>
+    <h3> Many course archives are available for GIRs on <a href="http://ocw.mit.edu/index.htm" target="_blank">OCW</a>. OCW may have additional problems for practice or extra lectures. </h3>
   </div>
 
   <div class="panel" id="panel-gir-no">
     <div class="question" id="question-writing">
-      Is this a writing class?
+      <h1>4. Is this a writing class?</h1>
       <div class="option-buttons">
         <div class="btn btn-default" id="option-writing-yes">
-          Yes
+          <p>Yes</p>
         </div>
         <div class="btn btn-default" id="option-writing-no">
-          No 
+          <p>No</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="panel" id="panel-writing-yes">
-    <h2>WCC</h2>
+    <h2>Writing and Communication Center (WCC)</h2>
+    <h3>The <a href="http://cmsw.mit.edu/writing-and-communication-center/" target="_blank">Writing and Communication Center</a> offers help at any stage of the writing and presentation process. </h3>
+  </div>
+
+  <div class="panel" id="panel-writing-no">
+    <h2>OCW</h2>
+    <h3> Many course archives are available for GIRs on <a href="http://ocw.mit.edu/index.htm" target="_blank">OCW</a>. OCW may have additional problems for practice or extra lectures. </h3>
+    <h2>Departmental Tutors</h2>
+    <h3>Many departments offer tutors! Check your department's website.</h3>
   </div>
 
   <div class="panel" id="panel-external-professor">
     <h2>Ombuds</h2>
+    <h3><a href="http://ombud.mit.edu" target="_blank">Ombuds</a> is a neutral, confidential, and independent resource for resolving conflicts between students and faculty or administration at MIT.</h3>
     <h2>Advisor</h2>
-    <h2>Policies + Procedures</h2>
+    <h3>Talk to your advisor about the issue. They may be able to offer a more experienced perspective. </h3>
   </div>
 
   <div class="panel" id="panel-external-shortterm">
-    <h2>S^3</h2>
+    <h2>Student Support Services (S3)</h2>
+    <h3><a href="http://web.mit.edu/uaap/s3/" target="_blank">Student Support Services</a> is a friendly and easily accessible hub of support for MIT students.</h3>
   </div>
 
   <div class="panel" id="panel-external-longterm">
-    <h2>SDS</h2>
+    <h2>Student Disabilities Services (SDS)</h2>
+    <h3><a href="http://web.mit.edu/uaap/sds/" target="_blank">Student Disabilities Services</a> provides support for students seeking accommodations for a disability. </h3>
   </div>
 
 
